@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .app-wrap {
+        margin: auto;
+        text-align: center;
+        background-color: antiquewhite;
+        width: fit-content;
+        height: 100%;
+
+        /* height: fit-content; */
+        border-radius: 50px;
+        border-radius: 60px;
+        margin-top: 10%;
+        border-radius: 50px;
+        background: #9595a3;
+        box-shadow: 20px 20px 17px #101021, -20px -20px 17px #3e3e83;
+
+        background-image: url("https://149366088.v2.pressablecdn.com/wp-content/uploads/2016/05/weather-wallpaper.jpg");
+      }
+      body {
+        background: #272752;
+      }
+      main {
+        padding: 0px 50px 50px 50px;
+        font-size: 1.4rem;
+        font-family: "Righteous", cursive;
+        color: rgb(255, 255, 255);
+      }
+      input {
+        padding: 10px;
+        padding-top: 20px;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        background: #ecf0f3;
+        border-radius: 50px;
+
+        font-size: 14px;
+        box-shadow: inset 12px 12px 12px #cbced1, inset -12px -12px 12px white;
+        border: none;
+        pointer-events: visible;
+      }
+
+      body {
+        background: #272752;
+      }
+
+      .text {
+        position: relative;
+
+        text-transform: uppercase;
+        font-family: verdana;
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: 700;
+        color: #f5f5f5;
+        text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191,
+          1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191,
+          1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191,
+          1px 9px 1px #919191, 1px 10px 1px #919191,
+          1px 18px 6px rgba(16, 16, 16, 0.4),
+          1px 22px 10px rgba(16, 16, 16, 0.2),
+          1px 25px 35px rgba(16, 16, 16, 0.2),
+          1px 30px 60px rgba(16, 16, 16, 0.4);
+      }
+      @media (max-width: 480px) {
+        body {
+          font-size: 1rem;
+        }
+        .app-wrap {
+          margin-top: 30%;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        main {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-wrap">
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Search for a city.."
+        />
+      </header>
+      <main>
+        <section class="location">
+          <div class="city">Delhi, IN</div>
+          <div class="date">12 June 2021</div>
+        </section>
+        <div class="current">
+          <div class="temp text">36°c</div>
+          <div class="weather">Haze</div>
+          <div class="high-low">36°c / 36°c</div>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
